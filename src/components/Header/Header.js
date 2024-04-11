@@ -1,16 +1,18 @@
 import { header } from '../../portfolio'
-import Navbar from '../Navbar/Navbar'
-import './Header.css'
+import Navbar from '../Navbar/Navbar';
+import Logo from '../../assets/logo.svg';
 
-const Header = () => {
-  const { homepage, title } = header
+import './Header.css';
+
+function Header() {
+  const { homepage, title } = header;
 
   return (
     <header className='header center'>
       <h3>
         {homepage ? (
           <a href={homepage} className='link'>
-            {title}
+            <img className='link brand__link' src={Logo} alt="brand logo" />
           </a>
         ) : (
           title
@@ -18,7 +20,7 @@ const Header = () => {
       </h3>
       <Navbar />
     </header>
-  )
+  );
 }
 
 export default Header

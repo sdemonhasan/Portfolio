@@ -69,6 +69,8 @@ main {
 .link:hover::before,
 .link:focus::before {
   width: 100%;
+  fill:var(--clr-bg);
+
 }
 
 .link--nav {
@@ -84,7 +86,7 @@ main {
 .btn {
   display: block;
   cursor: pointer;
-  padding: 0.8em 1.4em;
+  /* padding: 0.8em 1.4em; */
   font-weight: 500;
   font-size: 0.9rem;
   text-transform: lowercase;
@@ -102,6 +104,8 @@ main {
 .btn--outline:hover,
 .btn--outline:focus {
   color: var(--clr-bg);
+  fill:var(--clr-fg);
+
 }
 
 .btn--outline:before {
@@ -144,6 +148,13 @@ main {
 .btn--icon:active {
   transform: translateY(-5px);
 }
+
+.asset {
+  position:absolute;
+  width: 3rem;
+  height:3rem;
+}
+
 
 @media (max-width: 600px) {
   .section {

@@ -1,3 +1,7 @@
+
+.skills{
+  position:relative;
+}
 .skills__list {
   max-width: 450px;
   width: 95%;
@@ -6,7 +10,47 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.asset {
+  position:absolute;
+}
+.skill-asset-one {
+  top:10rem;
+  left:10rem;
+}
+.skill-asset-two {
+  top:20rem;
+  left:12rem;
+}
+.skill-asset-three {
+  top:20rem;
+  right:16rem;
+}
+.skill-asset-four {
+  top:27rem;
+  right:0.5rem;
+}
 
+.skill-asset-five {
+  top:18rem;
+  left:1rem;
+}
+
+.skill-asset-six {
+  top:22rem;
+  right:2rem;
+}
+
+
+.skill-asset-seven {
+  top:7rem;
+  right:2rem;
+}
+
+.skill-asset-eight {
+  top:35rem;
+  left:2rem;
+}
 .skills__list-item {
   margin: 0.5em;
+  border-radius: 1rem;
 }

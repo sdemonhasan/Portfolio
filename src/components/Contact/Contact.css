@@ -1,3 +1,20 @@
 .contact {
   flex-direction: column;
+  
+}
+
+.btn {
+  padding: 0.5rem;
+}
+.contact__link-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact__link-phone{
+  margin-right: 0.5rem;
+}
+.contact__link-phone-icon{
+  width: 1rem;
+  background-color: transparent;
 }

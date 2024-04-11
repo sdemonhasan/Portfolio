@@ -1,11 +1,22 @@
 .header {
-  height: 8em;
+  height: 5em;
   max-width: 1100px;
   width: 95%;
   margin: 0 auto;
   justify-content: space-between;
+  position:fixed;
+  left:0;
+  right: 0;
+  border: 1px solid #2978b5;
+  padding: 0rem 1rem 0 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  z-index: 22;
 }
-
+.brand__link{
+  margin-top:0.5rem;
+  width:4rem;
+}
 @media (max-width: 600px) {
   .header {
     height: 6em;

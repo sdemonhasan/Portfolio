@@ -1,6 +1,12 @@
-.about {
+.about__contact{
   flex-direction: column;
-  margin-top: 3em;
+}
+.about {
+  /* flex-direction: column; */
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  padding-top: 13em;
 }
 
 .about__name {
@@ -14,6 +20,7 @@
 .about__desc {
   font-size: 1rem;
   max-width: 600px;
+  text-align: justify;
 }
 
 .about__desc,
@@ -23,15 +30,72 @@
 
 .about .link--icon {
   margin-right: 0.8em;
+  margin-top: 0.5em;
 }
-
+.about__links{
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  margin-top:1rem;
+}
 .about .btn--outline {
   margin-right: 1em;
+  padding: 0.5rem;
+}
+.about__image{
+  width:20rem;
+  margin-left: 3rem;
+  border-radius: 3rem;
+  border: 4px solid #2978b5;
+}
+.asset-one {
+  top:10rem;
+  left:3rem;
+}
+.asset-two {
+  top:20rem;
+  left:4rem;
+}
+.asset-three {
+  top:20rem;
+  right:4rem;
+}
+.asset-four {
+  top:35rem;
+  right:0.5rem;
 }
 
+.asset-five {
+  top:45rem;
+  left:1rem;
+}
+
+.asset-six {
+  top:50rem;
+  right:2rem;
+}
+
+
+.asset-seven {
+  top:7rem;
+  right:2rem;
+}
+
+.asset-eight {
+  top:35rem;
+  left:2rem;
+}
 @media (max-width: 600px) {
   .app .about {
     align-items: flex-start;
-    margin-top: 2em;
+    padding-top: 10em;
+    flex-direction: column-reverse;
+  }
+  
+}
+@media (max-width: 400px) {
+  .about__image{
+    width:15rem;
+    margin-left:1.5rem;
   }
 }
